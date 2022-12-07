@@ -5,14 +5,33 @@ body{
 	color:black;
 }
 
-ul, li{
+ul{
 	list-style-type: none;
+	/*padding-left:20px;*/
+	margin:0;
+	padding:0;
+}
+
+.tasks ul{
+	color:#656565;
+}
+
+.tasks li{
+	display:grid;
+	grid-template-columns: 5% 85% 5% 5%;
+	align-items:center;
 }
 
 
 .wrapper{
 	display:grid;
 	grid-template-columns: 25% 75%;
+}
+
+.wrapper2{
+	padding-top:20px;
+	padding-right:20px;
+	padding-left:20px;
 }
 
 .nav{
@@ -68,8 +87,8 @@ h5{
 	font-size: 18px;
 	font-weight: 500;
 	margin:0;
-	padding-left:20px;
-	padding-top:20px;
+/*	padding-left:20px;
+	padding-top:20px;*/
 	padding-bottom: 13px;
 }
 
@@ -110,4 +129,8 @@ p{
 	background-color:rgba(138, 201, 38, 0.5);
 }
 
+.incomplete{
+	/*content: url("img/incomplete.png");*/
+	margin-right:5px;
+}
 
