@@ -20,6 +20,9 @@ ul{
 	display:grid;
 	grid-template-columns: 5% 85% 5% 5%;
 	align-items:center;
+	margin-bottom:15px;
+	border-bottom:1px solid #AAAAAA;
+	padding-bottom:15px;
 }
 
 
@@ -89,8 +92,14 @@ h5{
 	margin:0;
 /*	padding-left:20px;
 	padding-top:20px;*/
-	padding-bottom: 13px;
+	padding-bottom: 30px;
 }
+
+h5 img{
+	float:right;
+	margin-right:10px;
+}
+
 
 p{
 	margin:0;
@@ -147,3 +156,5 @@ p{
 	background-color:#8AC926;
 	border:none;
 }
+
+
