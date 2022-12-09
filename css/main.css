@@ -129,11 +129,21 @@ p{
 	background-color:rgba(138, 201, 38, 0.5);
 }
 
-.incomplete{
-	/*content: url("img/incomplete.png");*/
+.circle{
 	margin-right:5px;
+	height: 11px;
+  	width: 11px;
+	background-color: none;
+	border-radius: 100%;
+	border:1px solid #656565;
+	box-sizing: border-box;
 }
 
 .checked{
 	text-decoration: line-through;
+}
+
+.checked span{
+	background-color:#8AC926;
+	border:none;
 }
