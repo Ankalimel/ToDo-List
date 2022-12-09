@@ -1,5 +1,4 @@
 const tasks = document.getElementsByTagName('LI');
-const dots = document.getElementsByTagName('SPAN');
 let i;
 
 for(i=0;i<tasks.length;i++){
