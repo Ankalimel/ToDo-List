@@ -1,6 +1,7 @@
 const tasks = document.querySelectorAll('.tasks li');
 const trash = document.querySelectorAll('.trashbin');
 const add = document.querySelectorAll('h5 img');
+const task = document.getElementById('first');
 
 
 //Toggle checkbox
@@ -44,6 +45,8 @@ function addNew(){
   let editPic = document.createElement("img"); //create edit icon
   let trashPic = document.createElement("img"); //create delete icon
 
+  let taskSet = list.parentElement.parentElement; //get the .tasks div
+
   //create new task with all its elements
   checkbox.classList.add('circle');
   editPic.src="img/edit.png";  
@@ -74,7 +77,16 @@ function addNew(){
     a.style.display = "none";
   }
 
+
+  //Add scrollbar to a set of tasks
+  if(list.offsetHeight>=240){
+  	taskSet.style.overflow="auto";
+  }
+
 }
+
+
+
 
 
 
