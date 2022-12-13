@@ -5,7 +5,7 @@ body{
 	color:black;
 }
 
-ul{
+.main ul{
 	list-style-type: none;
 	margin:0;
 	padding:0;
@@ -61,6 +61,14 @@ ul{
 #container2{
 	padding-left:100px;
 	padding-right:100px
+}
+
+h1{
+	font-size: 32px;
+	font-weight: 900;
+	color:white;
+	margin:0;
+	padding-left:100px;
 }
 
 h2{
@@ -154,6 +162,12 @@ p{
 	box-sizing: border-box;
 }
 
+.smallcircle{
+	height: 11px;
+  	width: 11px;
+	background-color: #8AC926;
+}
+
 .checked{
 	text-decoration: line-through;
 }
@@ -161,6 +175,27 @@ p{
 .checked span{
 	background-color:#8AC926;
 	border:none;
+}
+
+
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(255, 202, 58);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #8AC926; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8AC926; 
 }
 
 
