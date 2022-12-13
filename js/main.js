@@ -3,14 +3,17 @@ const trash = document.querySelectorAll('.trashbin');
 const add = document.querySelectorAll('h5 img');
 const task = document.getElementById('first');
 const btn = document.getElementById('addTaskButton1');
+const dots = document.querySelectorAll('.tasks span');
 
 btn.addEventListener("click", addNew);
 
 //Toggle checkbox
-for(let i=0;i<tasks.length;i++){
-	tasks[i].addEventListener('click', function(t) {
-    t.target.classList.toggle('checked');
+for(let i=0;i<dots.length;i++){
+	dots[i].addEventListener('click', function(t) {
+    t.target.classList.toggle('checked1');
+    tasks[i].classList.toggle('checked2');
 	});
+
 }
 
 //Delete a task
@@ -44,18 +47,15 @@ function addNew(){
   let inputValue = document.getElementById("addTask1").value; //get input value
   let t = document.createTextNode(inputValue); //create text node for li element
   let checkbox = document.createElement("span"); //create span element for the checkbox
-  let editPic = document.createElement("img"); //create edit icon
   let trashPic = document.createElement("img"); //create delete icon
 
   let taskSet = list.parentElement.parentElement; //get the .tasks div
 
   //create new task with all its elements
-  checkbox.classList.add('circle');
-  editPic.src="img/edit.png";  
+  checkbox.classList.add('circle'); 
   trashPic.src="img/trash.png";
   li.appendChild(checkbox);
   li.appendChild(t);
-  li.appendChild(editPic);
   li.appendChild(trashPic);
 
   //check if value is input
@@ -69,8 +69,9 @@ function addNew(){
   document.getElementById("addTask1").value = "";
 
   //toggle checkbox for new items
-  li.addEventListener('click', function(t) {
-    t.target.classList.toggle('checked');
+  checkbox.addEventListener('click', function(t) {
+    t.target.classList.toggle('checked1');
+    li.classList.add('checked2');
   });
 
   //delete new items
