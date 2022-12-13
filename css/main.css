@@ -18,7 +18,7 @@ body{
 
 .tasks li{
 	display:grid;
-	grid-template-columns: 5% 85% 5% 5%;
+	grid-template-columns: 5% 90% 5%;
 	align-items:center;
 	margin-bottom:15px;
 	border-bottom:1px solid #AAAAAA;
@@ -168,14 +168,24 @@ p{
 	background-color: #8AC926;
 }
 
-.checked{
-	text-decoration: line-through;
-}
-
-.checked span{
+.checked1{
 	background-color:#8AC926;
 	border:none;
 }
+
+.checked2{
+	text-decoration: line-through;
+}
+
+.taskInput{
+	border:none;
+	background-color:rgba(255, 202, 58, 0);
+	font-family:Montserrat;
+	font-size: 15px;
+	font-weight: 400;
+	color:#656565;
+}
+
 
 
 
