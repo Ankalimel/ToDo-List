@@ -2,7 +2,9 @@ const tasks = document.querySelectorAll('.tasks li');
 const trash = document.querySelectorAll('.trashbin');
 const add = document.querySelectorAll('h5 img');
 const task = document.getElementById('first');
+const btn = document.getElementById('addTaskButton1');
 
+btn.addEventListener("click", addNew);
 
 //Toggle checkbox
 for(let i=0;i<tasks.length;i++){
@@ -84,6 +86,10 @@ function addNew(){
   }
 
 }
+
+
+
+
 
 
 
