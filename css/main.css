@@ -186,6 +186,10 @@ p{
 	color:#656565;
 }
 
+.taskInput:focus{
+	outline: none;
+}
+
 
 
 
